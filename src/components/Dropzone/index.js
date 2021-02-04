@@ -2,6 +2,7 @@ import React, { useCallback } from 'react'
 
 import styled from 'styled-components'
 import DropzoneText from './DropzoneText'
+import logo from '../../assets/logo-vilaapps.png'
 
 import { useDropzone } from 'react-dropzone'
 
@@ -18,6 +19,7 @@ const Dropzone = ({ handlePdf }) => {
         <Wrapper>
             <InputWrapper {...getRootProps()}>
                 <input {...getInputProps()} />
+                <Logo src={logo} />
                 <DropzoneText text={selectText()} />
             </InputWrapper>
         </Wrapper>
@@ -46,6 +48,11 @@ const InputWrapper = styled.div`
     display: flex; 
     justify-content: center; 
     align-items: center;
+    flex-direction: column;
+`
+
+const Logo = styled.img`
+    width: 200px;
 `
 
 export default Dropzone
