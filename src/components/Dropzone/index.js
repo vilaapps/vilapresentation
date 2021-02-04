@@ -5,6 +5,7 @@ import DropzoneText from './DropzoneText'
 import logo from '../../assets/logo-vilaapps.png'
 
 import { useDropzone } from 'react-dropzone'
+import { translate } from '../../i18n/config'
 
 const Dropzone = ({ handlePdf }) => {
     const onDrop = useCallback(handlePdf, [])
@@ -12,8 +13,8 @@ const Dropzone = ({ handlePdf }) => {
     const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop })
 
     const selectText = () => isDragActive
-        ? "SOLTE O ARQUIVO..."
-        : "ARRASTE O ARQUIVO PARA DENTRO DA DROPZONE OU CLIQUE AQUI PARA ABRIR A SELEÇÃO"
+        ? translate("dropzone.activeDrag")
+        : translate("dropzone.nonActiveDrag")
 
     return (
         <Wrapper>

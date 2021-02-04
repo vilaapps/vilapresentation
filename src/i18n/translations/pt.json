@@ -1,0 +1,8 @@
+{
+  "pt": {
+    "dropzone":{
+      "activeDrag": "SOLTE O ARQUIVO...",
+      "nonActiveDrag": "ARRASTE O ARQUIVO PARA DENTRO DA DROPZONE OU CLIQUE AQUI PARA ABRIR A SELEÇÃO"
+    }
+  }
+}

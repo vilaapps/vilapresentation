@@ -1,0 +1,9 @@
+{
+    "pt": {
+      "dropzone":{
+        "activeDrag": "DROP THE FILE...",
+        "nonActiveDrag": "DRAG THE FILE INSIDE THE DROPZONE OR CLICK HERE TO OPEN THE SELECTION"
+      }
+    }
+  }
+  

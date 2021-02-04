@@ -4,6 +4,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyles from './components/GlobalStyles'
 
+import { setI18nConfig } from '../src/i18n/config';
+
+setI18nConfig()
+
 ReactDOM.render(
   <React.StrictMode>
     {/* <GlobalStyles> */}
